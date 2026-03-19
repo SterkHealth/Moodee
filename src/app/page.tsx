@@ -1,5 +1,37 @@
+"use client";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import styles from "./page.module.css";
+
+const wordList = ["PCOS", "Endometriosis", "Menopause", "PMDD"];
+
+function RotatingWord() {
+  const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setIndex((i) => (i + 1) % wordList.length);
+        setVisible(true);
+      }, 400);
+    }, 2600);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <span
+      className={styles.rotatingWord}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(14px)",
+      }}
+    >
+      {wordList[index]}
+    </span>
+  );
+}
 
 export default function Home() {
   return (
@@ -16,8 +48,9 @@ export default function Home() {
               Specialist Women's Hormonal Health
             </div>
             <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
-              A new standard of care for<br />
-              <span className={styles.rotatingWord} id="rotating-word">PCOS</span>
+              A new standard of care for
+              <br />
+              <RotatingWord />
             </h1>
             <p className={`${styles.heroSub} animate-fade-up delay-3`}>
               Expert online care for PCOS, Endometriosis, Menopause and hormonal
@@ -41,29 +74,6 @@ export default function Home() {
               <div className={styles.trustItem}>
                 <span className={styles.trustIcon}>✓</span> Medicare rebates available
               </div>
-            </div>
-
-        {/* Floating cards */}
-        <div className={styles.floatingCards}>
-          <div className={`${styles.card} ${styles.card1}`}>
-            <div className={styles.cardIcon}>🌸</div>
-            <div>
-              <div className={styles.cardLabel}>PCOS Management</div>
-              <div className={styles.cardSub}>Personalised treatment plans</div>
-            </div>
-          </div>
-          <div className={`${styles.card} ${styles.card2}`}>
-            <div className={styles.cardIcon}>💛</div>
-            <div>
-              <div className={styles.cardLabel}>Endometriosis Care</div>
-              <div className={styles.cardSub}>Finally, real answers</div>
-            </div>
-          </div>
-          <div className={`${styles.card} ${styles.card3}`}>
-            <div className={styles.cardIcon}>🌿</div>
-            <div>
-              <div className={styles.cardLabel}>Menopause Support</div>
-              <div className={styles.cardSub}>Evidence-based & holistic</div>
             </div>
           </div>
         </div>
