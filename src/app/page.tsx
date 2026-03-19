@@ -16,8 +16,8 @@ export default function Home() {
               Specialist Women's Hormonal Health
             </div>
             <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
-              Finally, healthcare that<br />
-              <em>understands</em> you
+              A new standard of care for<br />
+              <span className={styles.rotatingWord} id="rotating-word">PCOS</span>
             </h1>
             <p className={`${styles.heroSub} animate-fade-up delay-3`}>
               Expert online care for PCOS, Endometriosis, Menopause and hormonal
@@ -42,8 +42,6 @@ export default function Home() {
                 <span className={styles.trustIcon}>✓</span> Medicare rebates available
               </div>
             </div>
-          </div>
-        </div>
 
         {/* Floating cards */}
         <div className={styles.floatingCards}>
