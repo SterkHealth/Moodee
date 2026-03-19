@@ -1,0 +1,281 @@
+.hero {
+  position: relative;
+  padding: 160px 0 100px;
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, #fdf1e2 0%, #fce8ee 50%, #fcdce2 100%);
+  z-index: 0;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+}
+
+.heroContent { max-width: 640px; }
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: clamp(40px, 5vw, 64px);
+  color: var(--text-dark);
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.title em {
+  font-style: italic;
+  color: var(--coral);
+}
+
+.sub {
+  font-size: 19px;
+  color: var(--text-mid);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Mission */
+.mission {
+  padding: 100px 0;
+  background: white;
+}
+
+.missionInner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.missionStat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--blush);
+}
+
+.missionStat:first-child { padding-top: 0; }
+
+.bigNum {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--coral);
+  line-height: 1;
+}
+
+.bigLabel {
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.5;
+  max-width: 220px;
+}
+
+.missionTag {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 16px;
+}
+
+.missionTitle {
+  font-size: clamp(28px, 3vw, 40px);
+  color: var(--text-dark);
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+.missionText {
+  font-size: 16px;
+  color: var(--text-mid);
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+/* Values */
+.values {
+  padding: 100px 0;
+  background: var(--gradient-soft);
+}
+
+.valuesHeader {
+  margin-bottom: 60px;
+}
+
+.valuesTitle {
+  font-size: clamp(32px, 4vw, 48px);
+  color: var(--text-dark);
+  margin-top: 16px;
+  letter-spacing: -0.5px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.valueCard {
+  background: white;
+  border-radius: 24px;
+  padding: 36px 28px;
+  border: 1px solid var(--blush);
+}
+
+.valueIcon { font-size: 36px; margin-bottom: 20px; }
+
+.valueTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.valueDesc {
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+/* Team */
+.team {
+  padding: 100px 0;
+  background: white;
+}
+
+.teamHeader {
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+
+.teamTitle {
+  font-size: clamp(32px, 4vw, 48px);
+  color: var(--text-dark);
+  margin: 16px 0 16px;
+  letter-spacing: -0.5px;
+}
+
+.teamSub {
+  font-size: 16px;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.docCard {
+  background: var(--gradient-soft);
+  border-radius: 24px;
+  padding: 40px 32px;
+  border: 1px solid var(--blush);
+  text-align: center;
+}
+
+.docAvatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--gradient-coral);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.docName {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.docRole {
+  font-size: 13px;
+  color: var(--coral);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.docSpec {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* CTA */
+.ctaSection {
+  padding: 80px 0 120px;
+  background: var(--gradient-warm);
+}
+
+.ctaBox {
+  background: var(--text-dark);
+  border-radius: 32px;
+  padding: 72px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaBox::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(248, 139, 180, 0.2) 0%, transparent 70%);
+  top: -200px;
+  right: -100px;
+}
+
+.ctaBox h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  color: white;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaBox p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 36px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .valuesGrid { grid-template-columns: repeat(2, 1fr); }
+  .teamGrid { grid-template-columns: 1fr 1fr; }
+  .missionInner { grid-template-columns: 1fr; gap: 48px; }
+}
+
+@media (max-width: 768px) {
+  .valuesGrid { grid-template-columns: 1fr; }
+  .teamGrid { grid-template-columns: 1fr; }
+  .ctaBox { padding: 48px 24px; }
+}
