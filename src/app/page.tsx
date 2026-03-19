@@ -36,7 +36,6 @@ function RotatingWord() {
 export default function Home() {
   return (
     <>
-      {/* ── HERO ── */}
       <section className={styles.hero}>
         <div className={styles.heroBg} />
         <div className={styles.heroOrb1} />
@@ -79,7 +78,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── STATS ── */}
       <section className={styles.stats}>
         <div className="container">
           <div className={styles.statsGrid}>
@@ -98,7 +96,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS ── */}
       <section className={styles.howItWorks}>
         <div className="container">
           <div className={styles.sectionHeader}>
@@ -133,56 +130,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CONDITIONS ── */}
       <section className={styles.conditions}>
         <div className="container">
           <div className={styles.sectionHeader}>
             <div className={styles.sectionTag}>What We Treat</div>
-            <h2 className={styles.sectionTitle}>
-              Specialist care for every stage
-            </h2>
+            <h2 className={styles.sectionTitle}>Specialist care for every stage</h2>
             <p className={styles.sectionSub}>
               From first symptoms to long-term management — we're with you every step.
             </p>
           </div>
           <div className={styles.conditionsGrid}>
             {[
-              {
-                icon: "🌀",
-                name: "PCOS",
-                desc: "Polycystic ovary syndrome affects hormones, cycles, fertility and metabolism. We create plans that actually work.",
-                href: "/services#pcos",
-              },
-              {
-                icon: "🩸",
-                name: "Endometriosis",
-                desc: "Years of being dismissed ends here. We specialise in diagnosis support, pain management and long-term care.",
-                href: "/services#endometriosis",
-              },
-              {
-                icon: "🌿",
-                name: "Menopause & Perimenopause",
-                desc: "Hot flushes, brain fog, mood changes — we offer evidence-based HRT and holistic support for every symptom.",
-                href: "/services#menopause",
-              },
-              {
-                icon: "⚡",
-                name: "Hormonal Imbalance",
-                desc: "Fatigue, weight changes, irregular periods — we investigate the root cause and create a plan to restore balance.",
-                href: "/services#hormones",
-              },
-              {
-                icon: "🧠",
-                name: "PMDD",
-                desc: "Severe premenstrual dysphoric disorder requires specialist care. We take your experience seriously.",
-                href: "/services#pmdd",
-              },
-              {
-                icon: "💗",
-                name: "Menstrual Health",
-                desc: "Heavy, painful or irregular periods are not something you just have to live with. Let us help.",
-                href: "/services#menstrual",
-              },
+              { icon: "🌀", name: "PCOS", desc: "Polycystic ovary syndrome affects hormones, cycles, fertility and metabolism. We create plans that actually work.", href: "/services#pcos" },
+              { icon: "🩸", name: "Endometriosis", desc: "Years of being dismissed ends here. We specialise in diagnosis support, pain management and long-term care.", href: "/services#endometriosis" },
+              { icon: "🌿", name: "Menopause & Perimenopause", desc: "Hot flushes, brain fog, mood changes — we offer evidence-based HRT and holistic support for every symptom.", href: "/services#menopause" },
+              { icon: "⚡", name: "Hormonal Imbalance", desc: "Fatigue, weight changes, irregular periods — we investigate the root cause and create a plan to restore balance.", href: "/services#hormones" },
+              { icon: "🧠", name: "PMDD", desc: "Severe premenstrual dysphoric disorder requires specialist care. We take your experience seriously.", href: "/services#pmdd" },
+              { icon: "💗", name: "Menstrual Health", desc: "Heavy, painful or irregular periods are not something you just have to live with. Let us help.", href: "/services#menstrual" },
             ].map((c) => (
               <Link key={c.name} href={c.href} className={styles.conditionCard}>
                 <div className={styles.conditionIcon}>{c.icon}</div>
@@ -195,7 +159,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── TESTIMONIAL ── */}
       <section className={styles.testimonial}>
         <div className="container">
           <div className={styles.testimonialInner}>
@@ -217,7 +180,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── BOTTOM CTA ── */}
       <section className={styles.bottomCta}>
         <div className="container">
           <div className={styles.ctaBox}>
