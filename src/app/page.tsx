@@ -40,7 +40,7 @@ export default function Home() {
         <div className={styles.heroBg} />
         <div className={styles.heroOrb1} />
         <div className={styles.heroOrb2} />
-       <div style={{padding: "0 24px"}}>
+       <div style={{padding: "0 24px", maxWidth: "1200px", margin: "0 auto", width: "100%"}}>
           <div className={styles.heroContent}>
             <span className={styles.heroEyebrow}>Women's Hormonal Health</span>
             <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
