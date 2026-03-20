@@ -10,13 +10,14 @@
   --deep-2: #2d2d28;
   --mid: #6b6458;
   --light: #a09888;
+  --yellow: #fbfc96;
   --white: #ffffff;
-  --gradient-hero: linear-gradient(160deg, #1a1a18 0%, #2d2d28 100%);
-  --gradient-warm: linear-gradient(180deg, #f5f0e8 0%, #ede6d6 100%);
+  --cream: #fdf1e2;
   --gradient-rose: linear-gradient(135deg, #d4736a 0%, #c9a882 100%);
   --gradient-soft: linear-gradient(160deg, #f5f0e8 0%, #ede6d6 100%);
   --gradient-coral: linear-gradient(135deg, #d4736a 0%, #c9a882 100%);
   --gradient-pink: linear-gradient(135deg, #e8b4a0 0%, #d4736a 100%);
+  --gradient-warm: linear-gradient(180deg, #fdf1e2 0%, #ede6d6 100%);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -39,12 +40,13 @@ h1, h2, h3, h4 {
   padding: 0 24px;
 }
 
+/* ── Buttons ── */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #1a1a18;
-  color: white;
+  background: #fbfc96;
+  color: #1a1a18;
   padding: 16px 36px;
   border-radius: 4px;
   font-family: 'Figtree', sans-serif;
@@ -56,18 +58,20 @@ h1, h2, h3, h4 {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
 .btn-primary:hover {
-  background: #d4736a;
+  background: #f5f000;
   transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
 .btn-outline {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: transparent;
+  background: #fbfc96;
   color: #1a1a18;
   padding: 15px 34px;
   border-radius: 4px;
@@ -77,21 +81,23 @@ h1, h2, h3, h4 {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1.5px solid #1a1a18;
+  border: 1.5px solid rgba(0,0,0,0.15);
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .btn-outline:hover {
-  background: #1a1a18;
-  color: white;
+  background: #f5f000;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 .btn-light {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: white;
+  background: #fbfc96;
   color: #1a1a18;
   padding: 16px 36px;
   border-radius: 4px;
@@ -104,22 +110,24 @@ h1, h2, h3, h4 {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
 .btn-light:hover {
-  background: #f5f0e8;
+  background: #f5f000;
   transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
+/* ── Nav ── */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
   padding: 20px 0;
-  background: rgba(26, 26, 24, 0.96);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: #fbfc96;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
 .nav-inner {
@@ -135,14 +143,14 @@ nav {
   font-family: 'Cormorant Garamond', serif;
   font-size: 28px;
   font-weight: 500;
-  color: white;
+  color: #1a1a18;
   text-decoration: none;
   letter-spacing: 2px;
   text-transform: lowercase;
 }
 
 .nav-logo span {
-  color: #c9a882;
+  color: #d4736a;
 }
 
 .nav-links {
@@ -157,13 +165,13 @@ nav {
   font-weight: 500;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.65);
+  color: rgba(0,0,0,0.6);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .nav-links a:hover {
-  color: white;
+  color: #1a1a18;
 }
 
 .nav-cta {
@@ -185,20 +193,21 @@ nav {
   display: block;
   width: 24px;
   height: 1.5px;
-  background: white;
+  background: #1a1a18;
   border-radius: 2px;
   transition: all 0.3s;
 }
 
+/* ── Mobile Nav ── */
 .mobile-menu {
   display: none;
   position: fixed;
   top: 72px;
   left: 0;
   width: 100%;
-  background: #1a1a18;
+  background: #fbfc96;
   padding: 32px 24px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
   z-index: 99;
   flex-direction: column;
   gap: 24px;
@@ -212,11 +221,12 @@ nav {
   font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
+  color: rgba(0,0,0,0.7);
   text-decoration: none;
   font-weight: 500;
 }
 
+/* ── Footer ── */
 footer {
   background: #1a1a18;
   color: rgba(255,255,255,0.5);
@@ -297,6 +307,7 @@ footer {
   color: rgba(255,255,255,0.25);
 }
 
+/* ── Animations ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
@@ -321,6 +332,7 @@ footer {
 .delay-3 { animation-delay: 0.35s; opacity: 0; }
 .delay-4 { animation-delay: 0.5s; opacity: 0; }
 
+/* ── Responsive ── */
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
