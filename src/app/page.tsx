@@ -42,10 +42,6 @@ export default function Home() {
         <div className={styles.heroOrb2} />
         <div className="container">
           <div className={styles.heroContent}>
-            <div className={`${styles.badge} animate-fade-up delay-1`}>
-              <span className={styles.badgeDot} />
-              Specialist Women's Hormonal Health
-            </div>
             <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
               A new standard of care for
               <br />
