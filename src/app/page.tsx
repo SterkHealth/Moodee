@@ -67,17 +67,6 @@ export default function Home() {
               What we treat →
             </Link>
           </div>
-          <div className={`${styles.heroTrust} animate-fade-up delay-4`}>
-            <div className={styles.trustItem}>
-              <span className={styles.trustIcon}>✓</span> No referral needed
-            </div>
-            <div className={styles.trustItem}>
-              <span className={styles.trustIcon}>✓</span> 100% online
-            </div>
-            <div className={styles.trustItem}>
-              <span className={styles.trustIcon}>✓</span> Medicare rebates available
-            </div>
-          </div>
         </div>
       </section>
 
