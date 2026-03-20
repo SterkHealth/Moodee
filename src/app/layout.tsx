@@ -5,13 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Moodee — Women's Hormonal Health",
-  description:
-    "Specialist online care for PCOS, Endometriosis, Menopause and women's hormonal health. No waitlists. Expert doctors. Real answers.",
-  openGraph: {
-    title: "Moodee — Women's Hormonal Health",
-    description: "Specialist online care for PCOS, Endometriosis & Menopause.",
-    url: "https://www.moodee.co",
-  },
+  description: "Specialist online care for PCOS, Endometriosis, Menopause and women's hormonal health.",
 };
 
 export default function RootLayout({
