@@ -8,31 +8,41 @@
   padding: 140px 0 80px;
 }
 
+/* 👇 KEY FIX: make container control layout */
+.hero .container {
+  display: flex;
+  align-items: center;
+}
+
+/* Background stays the same */
 .heroBg {
   position: absolute;
   inset: 0;
   background-image: url('/hero-bg.jpg');
   background-size: cover;
-  background-position: right center;
+  background-position: 75% center; /* slight tweak for balance */
   z-index: 0;
 }
 
+/* 👇 SIMPLIFIED overlay (less fake "gap") */
 .heroBg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(253,241,226,1) 0%, rgba(253,241,226,1) 30%, rgba(253,241,226,0.85) 55%, rgba(253,241,226,0) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(253,241,226,1) 0%,
+    rgba(253,241,226,0.9) 20%,
+    rgba(253,241,226,0.6) 45%,
+    rgba(253,241,226,0) 75%
+  );
 }
-
-.heroOrb1 { display: none; }
-.heroOrb2 { display: none; }
 
 .heroContent {
   position: relative;
   z-index: 1;
   max-width: 560px;
-  margin: 0;
-  text-align: left;
+  /* ❌ NO margin-left or padding-left */
 }
 
 .badge { display: none; }
