@@ -43,8 +43,8 @@ export default function Home() {
         <div className={styles.heroContent}>
           <span className={styles.heroEyebrow}>Women's Hormonal Health</span>
           <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
-            A new standard<br />of care for<br /><RotatingWord />
-          </h1>
+  A new standard of care for <RotatingWord />
+</h1>
           <p className={`${styles.heroSub} animate-fade-up delay-3`}>
             Personalised, evidence-based care for women's hormonal health — online, accessible, and built around you.
           </p>
