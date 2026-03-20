@@ -24,8 +24,8 @@
 .heroContent {
   position: relative;
   z-index: 1;
-  max-width: 620px;
-  padding: 160px 0 100px 24px;
+  max-width: 580px;
+  padding: 160px 0 100px 0;
 }
 
 .badge { display: none; }
@@ -43,8 +43,8 @@
 }
 
 .heroTitle {
-  font-size: clamp(52px, 6vw, 88px);
-  line-height: 1.0;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.05;
   color: #1a1a18;
   margin-bottom: 28px;
   letter-spacing: -1px;
