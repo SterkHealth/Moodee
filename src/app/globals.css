@@ -44,10 +44,10 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #f16368;
-  color: white;
+  background: #fff1bf;
+  color: #1a1a18;
   padding: 16px 36px;
-  border-radius: 4px;
+  border-radius: 50px;
   font-family: 'Figtree', sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -57,49 +57,47 @@ h1, h2, h3, h4 {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(241,99,104,0.35);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
 .btn-primary:hover {
-  background: #d94f54;
+  background: #ffe99a;
   transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgba(241,99,104,0.45);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.15);
 }
 
 .btn-outline {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #f16368;
-  color: white;
+  background: #fff1bf;
+  color: #1a1a18;
   padding: 15px 34px;
-  border-radius: 4px;
+  border-radius: 50px;
   font-family: 'Figtree', sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1.5px solid rgba(255,255,255,0.3);
+  border: 1.5px solid rgba(0,0,0,0.08);
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(241,99,104,0.3);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
 .btn-outline:hover {
-  background: #d94f54;
+  background: #ffe99a;
   transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgba(241,99,104,0.4);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.15);
 }
 
 .btn-light {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #f16368;
-  color: white;
+  background: #fff1bf;
+  color: #1a1a18;
   padding: 16px 36px;
-  border-radius: 4px;
+  border-radius: 50px;
   font-family: 'Figtree', sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -109,13 +107,12 @@ h1, h2, h3, h4 {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(241,99,104,0.35);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
 .btn-light:hover {
-  background: #d94f54;
+  background: #ffe99a;
   transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgba(241,99,104,0.45);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.15);
 }
 
 /* ── Nav ── */
