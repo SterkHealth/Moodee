@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: var(--deep);
+  background: #1a1a18;
 }
 
 .heroBg {
@@ -15,7 +15,7 @@
   background-size: cover;
   background-position: right center;
   z-index: 0;
-  opacity: 0.45;
+  opacity: 1;
 }
 
 .heroOrb1 { display: none; }
@@ -37,7 +37,7 @@
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--clay);
+  color: #c9a882;
   margin-bottom: 24px;
   display: block;
 }
@@ -53,7 +53,7 @@
 
 .rotatingWord {
   display: inline;
-  color: var(--blush);
+  color: #e8b4a0;
   font-style: italic;
   font-weight: 300;
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -72,32 +72,16 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 56px;
+  margin-bottom: 0;
 }
 
-.heroTrust {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  padding-top: 32px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-.trustItem {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  color: rgba(255,255,255,0.45);
-  font-weight: 400;
-}
-
-.trustIcon { color: var(--clay); font-size: 14px; }
+.heroTrust { display: none; }
+.trustItem { display: none; }
+.trustIcon { display: none; }
 
 /* ── STATS ── */
 .stats {
-  background: var(--sand);
+  background: #fdf1e2;
   padding: 0;
 }
 
@@ -118,7 +102,7 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: 52px;
   font-weight: 400;
-  color: var(--deep);
+  color: #1a1a18;
   margin-bottom: 8px;
   letter-spacing: -1px;
   line-height: 1;
@@ -127,7 +111,7 @@
 .statLabel {
   font-size: 12px;
   letter-spacing: 1px;
-  color: var(--mid);
+  color: #6b6458;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -148,13 +132,13 @@
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--clay);
+  color: #c9a882;
   margin-bottom: 20px;
 }
 
 .sectionTitle {
   font-size: clamp(36px, 4vw, 56px);
-  color: var(--deep);
+  color: #1a1a18;
   letter-spacing: -0.5px;
   font-weight: 300;
   line-height: 1.1;
@@ -162,7 +146,7 @@
 
 .sectionSub {
   font-size: 16px;
-  color: var(--mid);
+  color: #6b6458;
   max-width: 480px;
   margin-top: 16px;
   line-height: 1.8;
@@ -173,20 +157,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
-  background: var(--sand-dark);
+  background: #ede6d6;
 }
 
 .step {
   background: white;
   padding: 52px 40px;
-  position: relative;
 }
 
 .stepNum {
   font-family: 'Cormorant Garamond', serif;
   font-size: 72px;
   font-weight: 300;
-  color: var(--sand-dark);
+  color: #ede6d6;
   line-height: 1;
   margin-bottom: 24px;
   letter-spacing: -2px;
@@ -196,14 +179,14 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: 26px;
   font-weight: 400;
-  color: var(--deep);
+  color: #1a1a18;
   margin-bottom: 14px;
   line-height: 1.2;
 }
 
 .stepDesc {
   font-size: 14px;
-  color: var(--mid);
+  color: #6b6458;
   line-height: 1.8;
   font-weight: 300;
 }
@@ -211,7 +194,7 @@
 /* ── CONDITIONS ── */
 .conditions {
   padding: 120px 0;
-  background: var(--sand);
+  background: #fdf1e2;
 }
 
 .conditionsGrid {
@@ -222,7 +205,7 @@
 }
 
 .conditionCard {
-  background: var(--sand);
+  background: #fdf1e2;
   padding: 44px 36px;
   text-decoration: none;
   transition: background 0.3s ease;
@@ -233,24 +216,20 @@
   background: white;
 }
 
-.conditionIcon {
-  font-size: 28px;
-  margin-bottom: 20px;
-  display: block;
-}
+.conditionIcon { display: none; }
 
 .conditionName {
   font-family: 'Cormorant Garamond', serif;
   font-size: 26px;
   font-weight: 400;
-  color: var(--deep);
+  color: #1a1a18;
   margin-bottom: 12px;
   letter-spacing: -0.3px;
 }
 
 .conditionDesc {
   font-size: 14px;
-  color: var(--mid);
+  color: #6b6458;
   line-height: 1.8;
   margin-bottom: 24px;
   font-weight: 300;
@@ -261,13 +240,13 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--rose);
+  color: #d4736a;
 }
 
 /* ── TESTIMONIAL ── */
 .testimonial {
   padding: 120px 0;
-  background: var(--deep);
+  background: #1a1a18;
 }
 
 .testimonialInner {
@@ -279,7 +258,7 @@
 .quoteIcon {
   font-family: 'Cormorant Garamond', serif;
   font-size: 120px;
-  color: var(--clay);
+  color: #c9a882;
   opacity: 0.3;
   line-height: 0.6;
   margin-bottom: 32px;
@@ -306,7 +285,7 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--gradient-rose);
+  background: linear-gradient(135deg, #d4736a 0%, #c9a882 100%);
   color: white;
   font-family: 'Cormorant Garamond', serif;
   font-size: 22px;
@@ -333,11 +312,11 @@
 /* ── BOTTOM CTA ── */
 .bottomCta {
   padding: 0;
-  background: var(--sand);
+  background: #fdf1e2;
 }
 
 .ctaBox {
-  background: var(--rose);
+  background: #d4736a;
   padding: 100px 80px;
   text-align: center;
   position: relative;
@@ -380,5 +359,4 @@
   .conditionsGrid { grid-template-columns: 1fr; }
   .ctaBox { padding: 72px 24px; }
   .heroCtas { flex-direction: column; }
-  .heroTrust { gap: 16px; }
 }
