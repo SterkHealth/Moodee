@@ -7,7 +7,7 @@ export default function Nav() {
   return (
     <>
       <nav>
-   <div className="container nav-inner">
+        <div className="nav-inner">
           <Link href="/" className="nav-logo">
             mood<span>ee</span>
           </Link>
@@ -17,7 +17,7 @@ export default function Nav() {
             <li><Link href="/book">Book Free Consult</Link></li>
           </ul>
           <div className="nav-cta">
-            <Link href="/book" className="btn-primary">Book Free Consult →</Link>
+            <Link href="/book" className="btn-primary">Book Free Consult</Link>
           </div>
           <button
             className="nav-hamburger"
