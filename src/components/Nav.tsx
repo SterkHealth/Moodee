@@ -17,9 +17,9 @@ export default function Nav() {
             <li><Link href="/book">Book Free Consult</Link></li>
           </ul>
           <div className="nav-cta">
-            <Link href="/book" className="btn-primary">
-              Book Free Consult
-            </Link>
+            <Link href="/book" className="btn-light">
+  Book Free Consult
+</Link>
           </div>
           <button
             className="nav-hamburger"
