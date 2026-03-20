@@ -118,45 +118,28 @@ h1, h2, h3, h4 {
   box-shadow: 0 8px 24px rgba(241,99,104,0.45);
 }
 
-/* ── Nav ── */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
   padding: 20px 0;
-  background: #f16368;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+  background: white;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .nav-logo {
   font-family: 'Cormorant Garamond', serif;
   font-size: 28px;
   font-weight: 500;
-  color: white;
+  color: #1a1a18;
   text-decoration: none;
   letter-spacing: 2px;
   text-transform: lowercase;
 }
 
 .nav-logo span {
-  color: rgba(255,255,255,0.7);
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  list-style: none;
+  color: #f16368;
 }
 
 .nav-links a {
@@ -164,67 +147,46 @@ nav {
   font-weight: 500;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.8);
+  color: rgba(0,0,0,0.6);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .nav-links a:hover {
-  color: white;
-}
-
-.nav-cta {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.nav-hamburger {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
+  color: #1a1a18;
 }
 
 .nav-hamburger span {
   display: block;
   width: 24px;
   height: 1.5px;
-  background: white;
+  background: #1a1a18;
   border-radius: 2px;
   transition: all 0.3s;
 }
 
-/* ── Mobile Nav ── */
 .mobile-menu {
   display: none;
   position: fixed;
   top: 72px;
   left: 0;
   width: 100%;
-  background: #f16368;
+  background: white;
   padding: 32px 24px;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
   z-index: 99;
   flex-direction: column;
   gap: 24px;
-}
-
-.mobile-menu.open {
-  display: flex;
 }
 
 .mobile-menu a {
   font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.85);
+  color: rgba(0,0,0,0.7);
   text-decoration: none;
   font-weight: 500;
 }
-
 /* ── Footer ── */
 footer {
   background: #1a1a18;
