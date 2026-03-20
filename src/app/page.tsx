@@ -43,10 +43,8 @@ export default function Home() {
         <div className="container">
           <div className={styles.heroContent}>
             <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
-              A new standard of care for
-              <br />
-              <RotatingWord />
-            </h1>
+  A new standard of care for <RotatingWord />
+</h1>
             <p className={`${styles.heroSub} animate-fade-up delay-3`}>
              Personalised to You.
             </p>
