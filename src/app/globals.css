@@ -118,6 +118,7 @@ h1, h2, h3, h4 {
   box-shadow: 0 8px 24px rgba(241,99,104,0.45);
 }
 
+/* ── Nav ── */
 nav {
   position: fixed;
   top: 0;
@@ -126,6 +127,15 @@ nav {
   padding: 20px 0;
   background: white;
   border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .nav-logo {
@@ -142,6 +152,13 @@ nav {
   color: #f16368;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
 .nav-links a {
   font-size: 12px;
   font-weight: 500;
@@ -156,6 +173,21 @@ nav {
   color: #1a1a18;
 }
 
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .nav-hamburger span {
   display: block;
   width: 24px;
@@ -165,6 +197,7 @@ nav {
   transition: all 0.3s;
 }
 
+/* ── Mobile Nav ── */
 .mobile-menu {
   display: none;
   position: fixed;
@@ -179,6 +212,10 @@ nav {
   gap: 24px;
 }
 
+.mobile-menu.open {
+  display: flex;
+}
+
 .mobile-menu a {
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -187,6 +224,7 @@ nav {
   text-decoration: none;
   font-weight: 500;
 }
+
 /* ── Footer ── */
 footer {
   background: #1a1a18;
