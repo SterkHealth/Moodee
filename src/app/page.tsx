@@ -40,32 +40,34 @@ export default function Home() {
         <div className={styles.heroBg} />
         <div className={styles.heroOrb1} />
         <div className={styles.heroOrb2} />
-        <div className={styles.heroContent}>
-          <span className={styles.heroEyebrow}>Women's Hormonal Health</span>
-          <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
-  A new standard of care for <RotatingWord />
-</h1>
-          <p className={`${styles.heroSub} animate-fade-up delay-3`}>
-            Personalised, evidence-based care for women's hormonal health — online, accessible, and built around you.
-          </p>
-          <div className={`${styles.heroCtas} animate-fade-up delay-4`}>
-            <Link href="/book" className="btn-light">
-              Book free consultation
-            </Link>
-            <Link href="/services" style={{
-              fontSize: 13,
-              fontWeight: 600,
-              letterSpacing: "1.5px",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.6)",
-              textDecoration: "none",
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-              paddingTop: 16
-            }}>
-              What we treat →
-            </Link>
+        <div className="container">
+          <div className={styles.heroContent}>
+            <span className={styles.heroEyebrow}>Women's Hormonal Health</span>
+            <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
+              A new standard of care for <RotatingWord />
+            </h1>
+            <p className={`${styles.heroSub} animate-fade-up delay-3`}>
+              Personalised, evidence-based care for women's hormonal health — online, accessible, and built around you.
+            </p>
+            <div className={`${styles.heroCtas} animate-fade-up delay-4`}>
+              <Link href="/book" className="btn-light">
+                Book free consultation
+              </Link>
+              <Link href="/services" style={{
+                fontSize: 13,
+                fontWeight: 600,
+                letterSpacing: "1.5px",
+                textTransform: "uppercase" as const,
+                color: "rgba(0,0,0,0.4)",
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                gap: 8,
+                paddingTop: 16
+              }}>
+                What we treat →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -117,12 +119,12 @@ export default function Home() {
           </div>
           <div className={styles.conditionsGrid}>
             {[
-              { icon: "◯", name: "PCOS", desc: "Personalised plans for hormones, cycles, fertility and metabolism.", href: "/services#pcos" },
-              { icon: "◯", name: "Endometriosis", desc: "Diagnosis support, pain management and long-term specialist care.", href: "/services#endometriosis" },
-              { icon: "◯", name: "Menopause", desc: "Evidence-based HRT and holistic support for every symptom.", href: "/services#menopause" },
-              { icon: "◯", name: "Hormonal Health", desc: "Root cause investigation and a plan to restore your balance.", href: "/services#hormones" },
-              { icon: "◯", name: "PMDD", desc: "Specialist care for severe premenstrual dysphoric disorder.", href: "/services#pmdd" },
-              { icon: "◯", name: "Menstrual Health", desc: "Treatment for heavy, painful or irregular periods.", href: "/services#menstrual" },
+              { name: "PCOS", desc: "Personalised plans for hormones, cycles, fertility and metabolism.", href: "/services#pcos" },
+              { name: "Endometriosis", desc: "Diagnosis support, pain management and long-term specialist care.", href: "/services#endometriosis" },
+              { name: "Menopause", desc: "Evidence-based HRT and holistic support for every symptom.", href: "/services#menopause" },
+              { name: "Hormonal Health", desc: "Root cause investigation and a plan to restore your balance.", href: "/services#hormones" },
+              { name: "PMDD", desc: "Specialist care for severe premenstrual dysphoric disorder.", href: "/services#pmdd" },
+              { name: "Menstrual Health", desc: "Treatment for heavy, painful or irregular periods.", href: "/services#menstrual" },
             ].map((c) => (
               <Link key={c.name} href={c.href} className={styles.conditionCard}>
                 <h3 className={styles.conditionName}>{c.name}</h3>
