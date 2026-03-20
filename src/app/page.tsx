@@ -48,8 +48,7 @@ export default function Home() {
               <RotatingWord />
             </h1>
             <p className={`${styles.heroSub} animate-fade-up delay-3`}>
-              Expert online care for PCOS, Endometriosis, Menopause and hormonal
-              health. No waitlists. No dismissal. Just answers — fast.
+             Personalised to You.
             </p>
             <div className={`${styles.heroCtas} animate-fade-up delay-4`}>
               <Link href="/book" className="btn-primary">
