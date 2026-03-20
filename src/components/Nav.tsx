@@ -7,7 +7,7 @@ export default function Nav() {
   return (
     <>
       <nav>
-        <div className="nav-inner">
+   <div className="container nav-inner">
           <Link href="/" className="nav-logo">
             mood<span>ee</span>
           </Link>
