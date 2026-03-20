@@ -16,7 +16,7 @@ function RotatingWord() {
         setIndex((i) => (i + 1) % wordList.length);
         setVisible(true);
       }, 400);
-    }, 2600);
+    }, 2800);
     return () => clearInterval(interval);
   }, []);
 
@@ -25,7 +25,7 @@ function RotatingWord() {
       className={styles.rotatingWord}
       style={{
         opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(14px)",
+        transform: visible ? "translateY(0)" : "translateY(12px)",
       }}
     >
       {wordList[index]}
@@ -40,78 +40,75 @@ export default function Home() {
         <div className={styles.heroBg} />
         <div className={styles.heroOrb1} />
         <div className={styles.heroOrb2} />
-        <div className="container">
-          <div className={styles.heroContent}>
-            <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
-  A new standard of care for <RotatingWord />
-</h1>
-            <p className={`${styles.heroSub} animate-fade-up delay-3`}>
-             Personalised to You.
-            </p>
-            <div className={`${styles.heroCtas} animate-fade-up delay-4`}>
-              <Link href="/book" className="btn-primary">
-                Book your free consultation →
-              </Link>
-              <Link href="/services" className="btn-outline">
-                What we treat
-              </Link>
+        <div className={styles.heroContent}>
+          <span className={styles.heroEyebrow}>Women's Hormonal Health</span>
+          <h1 className={`${styles.heroTitle} animate-fade-up delay-2`}>
+            A new standard<br />of care for<br /><RotatingWord />
+          </h1>
+          <p className={`${styles.heroSub} animate-fade-up delay-3`}>
+            Personalised, evidence-based care for women's hormonal health — online, accessible, and built around you.
+          </p>
+          <div className={`${styles.heroCtas} animate-fade-up delay-4`}>
+            <Link href="/book" className="btn-light">
+              Book free consultation
+            </Link>
+            <Link href="/services" style={{
+              fontSize: 13,
+              fontWeight: 600,
+              letterSpacing: "1.5px",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.6)",
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              gap: 8,
+              paddingTop: 16
+            }}>
+              What we treat →
+            </Link>
+          </div>
+          <div className={`${styles.heroTrust} animate-fade-up delay-4`}>
+            <div className={styles.trustItem}>
+              <span className={styles.trustIcon}>✓</span> No referral needed
             </div>
-            <div className={`${styles.heroTrust} animate-fade-up delay-4`}>
-              <div className={styles.trustItem}>
-                <span className={styles.trustIcon}>✓</span> No referral needed
-              </div>
-              <div className={styles.trustItem}>
-                <span className={styles.trustIcon}>✓</span> 100% online
-              </div>
-              <div className={styles.trustItem}>
-                <span className={styles.trustIcon}>✓</span> Medicare rebates available
-              </div>
+            <div className={styles.trustItem}>
+              <span className={styles.trustIcon}>✓</span> 100% online
+            </div>
+            <div className={styles.trustItem}>
+              <span className={styles.trustIcon}>✓</span> Medicare rebates available
             </div>
           </div>
         </div>
       </section>
 
       <section className={styles.stats}>
-        <div className="container">
-          <div className={styles.statsGrid}>
-            {[
-              { num: "1 in 9", label: "women have Endometriosis" },
-              { num: "1 in 10", label: "women have PCOS" },
-              { num: "7+ years", label: "average diagnosis delay" },
-              { num: "0 days", label: "waitlist at Moodee" },
-            ].map((s) => (
-              <div key={s.label} className={styles.statItem}>
-                <div className={styles.statNum}>{s.num}</div>
-                <div className={styles.statLabel}>{s.label}</div>
-              </div>
-            ))}
-          </div>
+        <div className={styles.statsGrid}>
+          {[
+            { num: "1 in 9", label: "Women have Endometriosis" },
+            { num: "1 in 10", label: "Women have PCOS" },
+            { num: "7+ yrs", label: "Average diagnosis delay" },
+            { num: "0 days", label: "Waitlist at Moodee" },
+          ].map((s) => (
+            <div key={s.label} className={styles.statItem}>
+              <div className={styles.statNum}>{s.num}</div>
+              <div className={styles.statLabel}>{s.label}</div>
+            </div>
+          ))}
         </div>
       </section>
 
       <section className={styles.howItWorks}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <div className={styles.sectionTag}>Simple & Fast</div>
-            <h2 className={styles.sectionTitle}>Care in three easy steps</h2>
+            <div className={styles.sectionTag}>How it works</div>
+            <h2 className={styles.sectionTitle}>Care in three steps</h2>
+            <p className={styles.sectionSub}>No referrals, no waitlists. Just expert care, fast.</p>
           </div>
           <div className={styles.stepsGrid}>
             {[
-              {
-                num: "01",
-                title: "Book your free consult",
-                desc: "Choose a time that suits you. No GP referral needed — just book directly with one of our specialists.",
-              },
-              {
-                num: "02",
-                title: "Meet your specialist",
-                desc: "Connect via video from wherever you are. Our doctors listen deeply, take your symptoms seriously, and never dismiss your experience.",
-              },
-              {
-                num: "03",
-                title: "Get your care plan",
-                desc: "Receive a personalised treatment plan combining evidence-based medicine and holistic care — delivered straight to you.",
-              },
+              { num: "01", title: "Book your free consult", desc: "Choose a time that suits you. No GP referral needed — book directly with one of our specialists." },
+              { num: "02", title: "Meet your specialist", desc: "Connect via video from wherever you are. Our doctors listen deeply and never dismiss your experience." },
+              { num: "03", title: "Get your care plan", desc: "Receive a personalised treatment plan combining evidence-based medicine and holistic care." },
             ].map((step) => (
               <div key={step.num} className={styles.step}>
                 <div className={styles.stepNum}>{step.num}</div>
@@ -126,23 +123,19 @@ export default function Home() {
       <section className={styles.conditions}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <div className={styles.sectionTag}>What We Treat</div>
-            <h2 className={styles.sectionTitle}>Specialist care for every stage</h2>
-            <p className={styles.sectionSub}>
-              From first symptoms to long-term management — we're with you every step.
-            </p>
+            <div className={styles.sectionTag}>What we treat</div>
+            <h2 className={styles.sectionTitle}>Specialist care<br />for every stage</h2>
           </div>
           <div className={styles.conditionsGrid}>
             {[
-              { icon: "🌀", name: "PCOS", desc: "Polycystic ovary syndrome affects hormones, cycles, fertility and metabolism. We create plans that actually work.", href: "/services#pcos" },
-              { icon: "🩸", name: "Endometriosis", desc: "Years of being dismissed ends here. We specialise in diagnosis support, pain management and long-term care.", href: "/services#endometriosis" },
-              { icon: "🌿", name: "Menopause & Perimenopause", desc: "Hot flushes, brain fog, mood changes — we offer evidence-based HRT and holistic support for every symptom.", href: "/services#menopause" },
-              { icon: "⚡", name: "Hormonal Imbalance", desc: "Fatigue, weight changes, irregular periods — we investigate the root cause and create a plan to restore balance.", href: "/services#hormones" },
-              { icon: "🧠", name: "PMDD", desc: "Severe premenstrual dysphoric disorder requires specialist care. We take your experience seriously.", href: "/services#pmdd" },
-              { icon: "💗", name: "Menstrual Health", desc: "Heavy, painful or irregular periods are not something you just have to live with. Let us help.", href: "/services#menstrual" },
+              { icon: "◯", name: "PCOS", desc: "Personalised plans for hormones, cycles, fertility and metabolism.", href: "/services#pcos" },
+              { icon: "◯", name: "Endometriosis", desc: "Diagnosis support, pain management and long-term specialist care.", href: "/services#endometriosis" },
+              { icon: "◯", name: "Menopause", desc: "Evidence-based HRT and holistic support for every symptom.", href: "/services#menopause" },
+              { icon: "◯", name: "Hormonal Health", desc: "Root cause investigation and a plan to restore your balance.", href: "/services#hormones" },
+              { icon: "◯", name: "PMDD", desc: "Specialist care for severe premenstrual dysphoric disorder.", href: "/services#pmdd" },
+              { icon: "◯", name: "Menstrual Health", desc: "Treatment for heavy, painful or irregular periods.", href: "/services#menstrual" },
             ].map((c) => (
               <Link key={c.name} href={c.href} className={styles.conditionCard}>
-                <div className={styles.conditionIcon}>{c.icon}</div>
                 <h3 className={styles.conditionName}>{c.name}</h3>
                 <p className={styles.conditionDesc}>{c.desc}</p>
                 <span className={styles.conditionLink}>Learn more →</span>
@@ -157,10 +150,9 @@ export default function Home() {
           <div className={styles.testimonialInner}>
             <div className={styles.quoteIcon}>"</div>
             <blockquote className={styles.quote}>
-              After 6 years of being told my pain was normal, Moodee's doctor took
-              one look at my history and finally gave me real answers. I was
-              diagnosed with endometriosis within weeks and started a treatment plan
-              that has changed my life.
+              After 6 years of being told my pain was normal, Moodee's doctor
+              finally gave me real answers. I was diagnosed with endometriosis
+              within weeks and started a treatment plan that changed my life.
             </blockquote>
             <div className={styles.quoteAuthor}>
               <div className={styles.quoteAvatar}>S</div>
@@ -174,20 +166,17 @@ export default function Home() {
       </section>
 
       <section className={styles.bottomCta}>
-        <div className="container">
-          <div className={styles.ctaBox}>
-            <div className={styles.ctaOrb} />
-            <h2 className={styles.ctaTitle}>
-              You deserve care that<br />actually listens
-            </h2>
-            <p className={styles.ctaDesc}>
-              Book your free 15-minute consultation today. No referral needed.
-              Same-week appointments available.
-            </p>
-            <Link href="/book" className="btn-primary" style={{ fontSize: 16, padding: "16px 40px" }}>
-              Book your free consultation →
-            </Link>
-          </div>
+        <div className={styles.ctaBox}>
+          <div className={styles.ctaOrb} />
+          <h2 className={styles.ctaTitle}>
+            You deserve care<br />that actually listens
+          </h2>
+          <p className={styles.ctaDesc}>
+            Book your free 15-minute consultation today. No referral needed. Same-week appointments available.
+          </p>
+          <Link href="/book" className="btn-light">
+            Book your free consultation
+          </Link>
         </div>
       </section>
     </>
